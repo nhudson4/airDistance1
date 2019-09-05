@@ -37,8 +37,8 @@ int main(int argc, char **argv) {
   double distanceStartToEnd = acos(sin(startLatRad)*sin(endLatRad) + cos(startLatRad)*cos(endLatRad)*cos(endLongRad-startLongRad))*6371;
 
   printf("Location Distance\n");
-  printf("Origin: (%f startLat, %f startLong)\n", startLat, startLong);
-  printf("Destination: (%f endLat, %f endLong)\n", endLat, endLong);
+  printf("Origin: (%f, %f)\n", startLat, startLong);
+  printf("Destination: (%f, %f)\n", endLat, endLong);
   printf("Air distance is %f kms\n", distanceStartToEnd);
 
 }
